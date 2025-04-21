@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #1e293b;
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  background-color: #3b82f6;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+header nav a:hover {
+  background-color: #2563eb;
+}
+
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #e0e0e0;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.booking form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.booking input,
+.booking button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.booking button {
+  background-color: #10b981;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.booking button:hover {
+  background-color: #059669;
+}
+
+.booked-events ul,
+.available-slots ul {
+  list-style: none;
+  padding: 0;
+}
+
+.booked-events li,
+.available-slots li {
+  background: #f1f5f9;
+  margin: 5px 0;
+  padding: 8px 12px;
+  border-left: 5px solid #3b82f6;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #1e293b;
+  color: white;
+  margin-top: 30px;
+}

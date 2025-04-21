@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Narayanrao Ghorpade Auditorium</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1>Narayanrao Ghorpade Auditorium</h1>
+      <p>Your Campus Venue for Every Occasion</p>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#gallery">Photos</a>
+      <a href="#booking">Booking</a>
+      <a href="#events">Events</a>
+      <a href="#slots">Slots</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About the Auditorium</h2>
+    <p>
+      The Narayanrao Ghorpade Auditorium is a professional space for hosting college events like seminars, lectures, and cultural shows. Equipped with modern facilities, it offers an ideal platform for all your academic and creative needs.
+    </p>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Photo Gallery</h2>
+    <img src="https://via.placeholder.com/800x400?text=Auditorium+Photo" alt="Auditorium View" />
+  </section>
+
+  <section id="booking" class="booking">
+    <h2>Book the Auditorium</h2>
+    <form id="bookingForm">
+      <input type="text" id="eventName" placeholder="Event Name" required />
+      <input type="date" id="eventDate" required />
+      <input type="time" id="startTime" required />
+      <input type="number" id="eventDuration" placeholder="Duration (hrs)" min="1" required />
+      <button type="submit">Book</button>
+    </form>
+  </section>
+
+  <section id="events" class="booked-events">
+    <h2>Booked Events</h2>
+    <ul id="eventList"></ul>
+  </section>
+
+  <section id="slots" class="available-slots">
+    <h2>Available Slots (Next 7 Days)</h2>
+    <ul id="availableDatesList"></ul>
+  </section>
+
+  <footer>
+    <p>Contact: auditorium@dkte.edu | Phone: +91-1234567890</p>
+    <p>&copy; 2025 Narayanrao Ghorpade Auditorium</p>
+  </footer>
+
+  <script src="booking.js"></script>
+</body>
+</html>
